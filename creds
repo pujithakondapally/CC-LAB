@@ -27,8 +27,8 @@ LambdaS3Trigger
 Using Delimiters + Specifying Output Format
 
 Prompt:
-Using the C# class provided between triple backticks, write five NUnit unit tests designed to maximize code coverage. Present the test code in a single Markdown C# code block.
-After writing the tests, explain how to run dotnet test --collect:"XPlat Code Coverage" to measure coverage before and after, and report the improvement in percentage points.
+Using the C# class provided between triple backticks, write five Unit unit tests designed to maximize code coverage. Present the test code in a C# code block.
+After writing the tests, explain how to run dotnet test to measure coverage before and after, and report the improvement in percentage.
 
 public class Calculator  
 {  
@@ -41,7 +41,7 @@ public class Calculator
 2. Few-Shot Examples + Specifying Output Format
 
 Prompt:
-Here is an example NUnit test:
+Here is an example Unit test:
 
 [Test]
 public void Add_ShouldReturnCorrectSum()
@@ -57,13 +57,13 @@ Then, provide step-by-step instructions to run coverage analysis before and afte
 3. Specifying a Condition + Step-by-Step Reasoning
 
 Prompt:
-Write NUnit tests for the Calculator class only if there are methods with potential runtime error scenarios.
+Write Unit tests for the Calculator class only if there are methods with potential runtime error scenarios.
 
 Identify such methods and explain the risks.
 
 Write tests that both cover normal execution paths and the identified error paths.
 
-Show how to execute coverage measurement using dotnet test --collect:"XPlat Code Coverage" before and after adding the tests, and compute the improvement in coverage.
+Show how to execute coverage measurement using the tests before and after adding the tests, and compute the improvement in coverage.
 
 4. Allowing Time to Think + Specifying Steps to Follow
 
@@ -74,11 +74,11 @@ List all methods in the Calculator class.
 
 Determine possible edge cases for each method.
 
-Write NUnit tests covering those edge cases to improve code coverage.
+Write Unit tests covering those edge cases to improve code coverage.
 
-Provide the exact command to measure coverage before and after, and calculate the improvement in percentage points.
+Provide the exact command to measure coverage before and after, and calculate the improvement in percentage.
 
-5. Progressive Reasoning Before Conclusion + Using Delimiters
+5. Reasoning Before Conclusion + Using Delimiters
 
 Prompt:
 Analyze the Calculator class between triple backticks to identify untested or under-tested areas.
@@ -86,5 +86,6 @@ Analyze the Calculator class between triple backticks to identify untested or un
 // Calculator class code here
 
 
-First, present your observations on coverage gaps. Then, write five NUnit tests that address these gaps.
-Finally, explain how to measure the coverage percentage before and after adding these tests using dotnet test --collect:"XPlat Code Coverage", and report the improvement.
+First,identify coverage gaps. Then, write five Unit tests that address these gaps.
+Finally, explain how to measure the coverage percentage before and after adding these tests
+
